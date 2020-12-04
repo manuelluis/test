@@ -19,7 +19,7 @@ trigger:
 ---
 kind: pipeline
 type: exec
-name: default1
+name: default2
 
 platform:
   os: linux
