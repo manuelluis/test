@@ -1,17 +1,31 @@
 ---
 kind: pipeline
 type: exec
-name: default
+name: default1
 
 platform:
   os: linux
   arch: amd64
 
 steps:
-- name: greeting
+- name: tag
   commands:
-  - echo hello world
-
+  - env
+  
 trigger:
   event:
   - tag
+
+---
+kind: pipeline
+type: exec
+name: default1
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+- name: all
+  commands:
+  - env
